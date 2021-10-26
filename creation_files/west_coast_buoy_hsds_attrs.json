@@ -1,0 +1,212 @@
+{
+    "attrs":{
+        "coordinates":{
+            "description":"(latitude, longitude) using Datum: NAD83",
+            "src_name":"(Xp, Yp)",
+            "units":"(deg, deg)",
+            "dimensions":[
+                "position"
+            ]
+        },
+        "depth":{
+            "description":"Grid node depth",
+            "dimensions":[
+                "position"
+            ],
+            "units":"m",
+            "SWAN_name":"DEPTH",
+            "IEC_name":"h",
+            "src_name":"depth"
+        },
+        "direction":{
+            "description":"direction of wave propagation based on epsg:4326 (deg)",
+            "dimensions":[
+                "direction"
+            ],
+            "units":"deg",
+            "SWAN_name":"direction",
+            "IEC_name":"Sigma"
+        },
+        "directional_wave_spectrum":{
+            "description":"Variance density over the i^th frequency and j^th direction (m^2Hz^-1deg^-1)",
+            "dimensions":[
+                "time",
+                "frequency",
+                "direction",
+                "position"
+            ],
+            "units":"m^2 Hz^-1 deg^-1",
+            "SWAN_name":"energy",
+            "IEC_name":"S_ij",
+            "src_name":"energy"
+        },
+        "energy_period":{
+            "description":"Spectral width characterizes the relative spreading of energy in the wave spectrum. Large values indicate a wider spectral peak",
+            "dimensions":[
+                "time",
+                "position"
+            ],
+            "units":"s",
+            "SWAN_name":"TM02",
+            "IEC_name":"T_e"
+        },
+        "frequency":{
+            "description":"i^th discrete frequency (Hz)",
+            "dimensions":[
+                "frequency"
+            ],
+            "units":"Hz",
+            "SWAN_name":"frequency",
+            "IEC_name":"f_i"
+        },
+        "maximum_energy_direction":{
+            "description":"The direction from which the most wave energy is travelling",
+            "dimensions":[
+                "time",
+                "position"
+            ],
+            "units":"deg",
+            "SWAN_name":"",
+            "IEC_name":"Jsigma_Jmax"
+        },
+        "mean_wave_direction":{
+            "description":"Direction Normal to the Wave Crests",
+            "dimensions":[
+                "time",
+                "position"
+            ],
+            "units":"deg",
+            "SWAN_name":"DIR",
+            "IEC_name":"Sigma"
+        },
+        "mean_zero-crossing_period":{
+            "description":"Total wave energy flux from all directions",
+            "dimensions":[
+                "time",
+                "position"
+            ],
+            "units":"s",
+            "SWAN_name":"TMM10",
+            "IEC_name":"T_02"
+        },
+        "omni-directional_wave_power":{
+            "description":"Total wave energy flux from all directions",
+            "dimensions":[
+                "time",
+                "position"
+            ],
+            "units":"W\/m",
+            "SWAN_name":"",
+            "IEC_name":"J"
+        },
+        "peak_period":{
+            "description":"The period associated with the maximum value of the wave energy spectrum",
+            "dimensions":[
+                "time",
+                "position"
+            ],
+            "units":"s",
+            "SWAN_name":"RTP",
+            "IEC_name":"T_p"
+        },
+        "significant_wave_height":{
+            "description":"Calculated as the zeroth spectral moment (i.e., H_m0)",
+            "dimensions":[
+                "time",
+                "position"
+            ],
+            "units":"m",
+            "SWAN_name":"HSIGN",
+            "IEC_name":"H_s"
+        },
+        "spectral_width":{
+            "description":"Spectral width characterizes the relative spreading of energy in the wave spectrum. Large values indicate a wider spectral peak",
+            "dimensions":[
+                "time",
+                "position"
+            ],
+            "units":"",
+            "SWAN_name":"",
+            "IEC_name":"epsilon_o"
+        },
+        "time_index":{
+            "freq":"1h",
+            "timezone":"UTC",
+            "units":"GMT",
+            "dimensions":[
+                "time"
+            ]
+        },
+        "meta":{
+            "dimensions":[
+                "position"
+            ]
+        },
+        "global":{
+            "ref_SWAN-Manual":"SWAN Team, SWAN: User Manual, Delft University of Technology, Delft, The Netherlands, Cycle III Version 41.31, 2019.",
+            "ref_IEC62600-101":"International Electrotechnical Commission, Marine energy - Wave, tidal and other water current converters - Part 101: Wave energy resource assessment and characterization, Technical Specification 62600\u2013101, 2015.",
+            "ref_Wu-Wang-Yang-Garcia-Medina-2020":"W.C. Wu, T. Wang, Z. Yang, and G. Garc\u00eda-Medina, \u201cDevelopment and validation of a high-resolution regional wave hindcast model for U.S. West Coast wave resource characterization,\u201d Renewable Energy, vol. 152, pp. 736\u2013753, Jun. 2020.",
+            "source":"PNNL2019",
+            "version":"v1.0.0"
+        }
+    },
+    "dtype":{
+        "coordinates":"float32",
+        "depth":"float32",
+        "direction":"float32",
+        "directional_wave_spectrum":"float32",
+        "energy_period":"float32",
+        "frequency":"float32",
+        "maximum_energy_direction":"float32",
+        "mean_wave_direction":"float32",
+        "mean_zero-crossing_period":"float32",
+        "omni-directional_wave_power":"float32",
+        "peak_period":"float32",
+        "significant_wave_height":"float32",
+        "spectral_width":"float32",
+        "time_index":"bytes152",
+        "meta":null,
+        "global":null
+    },
+    "chunks":{
+        "coordinates":null,
+        "depth":null,
+        "direction":null,
+        "directional_wave_spectrum":[
+            1344,
+            5,
+            4,
+            20
+        ],
+        "energy_period":null,
+        "frequency":null,
+        "maximum_energy_direction":null,
+        "mean_wave_direction":null,
+        "mean_zero-crossing_period":null,
+        "omni-directional_wave_power":null,
+        "peak_period":null,
+        "significant_wave_height":null,
+        "spectral_width":null,
+        "time_index":null,
+        "meta":null,
+        "global":null
+    },
+    "name":{
+        "coordinates":null,
+        "depth":"water_depth",
+        "direction":null,
+        "directional_wave_spectrum":null,
+        "energy_period":null,
+        "frequency":null,
+        "maximum_energy_direction":null,
+        "mean_wave_direction":null,
+        "mean_zero-crossing_period":null,
+        "omni-directional_wave_power":null,
+        "peak_period":null,
+        "significant_wave_height":null,
+        "spectral_width":null,
+        "time_index":null,
+        "meta":null,
+        "global":null
+    }
+}
