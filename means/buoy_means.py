@@ -20,7 +20,7 @@ def main(domain, dset):
     res_path = f'/datasets/US_wave/v1.0.0/virtual_buoy/{domain}/{domain}_virtual_buoy*.h5'
     out_path = f'/scratch/mrossol/US_wave/buoy_means/{domain}_buoy_{dset}.csv'
     if dset == 'maximum_energy_direction':
-        kwargs = {'weights': ['omni-directional_wave_power',
+        kwargs = {'exponential_weights': False, 'weights': ['omni-directional_wave_power',
                               'directionality_coefficient']}
         statistics = {'weighted_circular_mean': {'func': circular_mean,
                                                  'kwargs': kwargs}}
